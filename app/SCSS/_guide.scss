@@ -1,0 +1,75 @@
+@import "./variables.scss";
+
+.col-wrap{
+  .col{
+    p{
+      border: 1px solid #ccc;
+    }
+  }
+}
+
+@include mq(){
+  @if $gutter-wid / 2 < $gutter-sp-wrap{
+    .col-wrap{
+      &::before{
+        content: "";
+        width: $gutter-sp-wrap - $gutter-wid / 2;
+        background: rgba(0, 255, 242, 0.1);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &::after{
+        content: "";
+        width: $gutter-sp-wrap - $gutter-wid / 2;
+        background: rgba(0, 255, 242, 0.1);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+.guide-wrap{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  padding: 0;
+  z-index: 99999;
+  .guide{
+    height: 100%;
+    .col{
+      position: relative;
+      border-left: 1px solid rgb(213, 0, 249);
+      &::before{
+        content: "";
+        width: $gutter-wid / 2;
+        background: rgba(213, 0, 249, 0.2);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include mq(sm){
+          width: $gutter-wid-sm / 2;
+        }
+      }
+      &::after{
+        content: "";
+        width: $gutter-wid / 2;
+        background: rgba(213, 0, 249, 0.2);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include mq(sm){
+          width: $gutter-wid-sm / 2;
+        }
+      }
+      &:last-child{
+        border-right: 1px solid rgb(213, 0, 249);
+      }
+    }
+  }
+}

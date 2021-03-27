@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- title -->
+<title>Page Title less than 55 characters</title>
+<meta property="og:title" content="Content Title">
+<!-- description -->
+<meta name="description" content="Description of the page less than 150 characters">
+<meta property="og:description" content="Description Here">
+<!-- OGP -->
+<link rel="icon" type="image/png" href="https://example.com/favicon_32x32.png">
+<meta property="og:image" content="https://example.com/image_1200x630.jpg">
+<meta property="og:url" content="https://example.com/page.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Site Name">
+<!-- css,js -->
+<link rel="stylesheet" type="text/css" href="common/css/app.min.css">
+<!-- <script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/app.js"></script> -->
+</head>
+
+<body>
+  <!-- guide -->
+  <div class="cont-wrap guide-wrap">
+    <div class="col-wrap guide">
+      <div class="col col-lg-1">
+      </div>
+      <div class="col col-lg-1">
+      </div>
+      <div class="col col-lg-1">
+      </div>
+      <div class="col col-lg-1">
+      </div>
+      <div class="col col-lg-1">
+      </div>
+      <div class="col col-lg-1">
+      </div>
+      <div class="col col-lg-1">
+      </div>
+      <div class="col col-lg-1">
+      </div>
+      <div class="col col-lg-1">
+      </div>
+      <div class="col col-lg-1">
+      </div>
+      <div class="col col-lg-1">
+      </div>
+      <div class="col col-lg-1">
+      </div>
+    </div>
+  </div>
+  <nav class="cont-wrap m-nav t-nav">
+    <div class="col-wrap">
+      <div class="col col-lg-2 col-md-12 col-middle m-nav-logo">
+        <h1>Ryoya.Grid.CSS</h1>
+      </div>
+    </div>
+  </nav>
+  <section class="cont-wrap" id="responsive">
+    <div class="col-wrap">
+      <div class="col-lg-12">
+        <h2>COLUMNS - Responsive</h2>
+        <p>.col-[mq]-[number] を指定。［.colに指定］</p>
+        <p>lg, md, sm, xsは変数で管理。</p>
+        <p>res : col-lg-4, col-md-3, col-sm-6, col-xs-12</p>
+      </div>
+    </div>
+    <div class="col-wrap">
+      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
+        <p>col-res</p>
+      </div>
+      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
+        <p>col-res</p>
+      </div>
+      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
+        <p>col-res</p>
+      </div>
+      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
+        <p>col-res</p>
+      </div>
+      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
+        <p>col-res</p>
+      </div>
+      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
+        <p>col-res</p>
+      </div>
+    </div>
+  </section>
+  <section class="cont-wrap" id="nogutter">
+    <div class="col-wrap">
+      <div class="col-lg-12">
+        <h2>COLUMNS - nogutter</h2>
+        <p>.nogutterを指定。［.col-wrapに指定］</p>
+        <p>gutterなし。</p>
+      </div>
+    </div>
+    <div class="col-wrap nogutter">
+      <div class="col col-lg-4">
+        <p>col-4</p>
+      </div>
+      <div class="col col-lg-4">
+        <p>col-4</p>
+      </div>
+      <div class="col col-lg-4">
+        <p>col-4</p>
+      </div>
+    </div>
+  </section>
+  <section class="cont-wrap" id="max">
+    <div class="col-wrap">
+      <div class="col-lg-12">
+        <h2>COLUMNS - Max[100%]</h2>
+        <p>.maxを指定。［.col-wrapに指定］</p>
+        <p>colごとのpaddingは別で指定する。</p>
+        <p>res : col-lg-6, col-md-3, col-sm-6, col-xs-12</p>
+      </div>
+    </div>
+    <div class="col-wrap max">
+      <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p>col-max-12</p>
+      </div>
+      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
+        <p>col-max-6</p>
+      </div>
+      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
+        <p>col-max-6</p>
+      </div>
+      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
+        <p>col-max-6</p>
+      </div>
+      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
+        <p>col-max-6</p>
+      </div>
+    </div>
+  </section>
+  <section class="cont-wrap" id="offset">
+    <div class="col-wrap">
+      <div class="col-lg-12">
+        <h2>COLUMNS - offset</h2>
+        <p>.offset-[mq]-[number] を指定。［.colに指定］</p>
+      </div>
+    </div>
+    <div class="col-wrap">
+      <div class="col col-lg-3 offset-lg-1">
+        <p>col-3 [offset-lg-1]</p>
+      </div>
+      <div class="col col-lg-4 offset-md-2">
+        <p>col-4 [offset-md-2]</p>
+      </div>
+      <div class="col col-lg-3 offset-sm-4">
+        <p>col-3 [offset-sm-4]</p>
+      </div>
+      <div class="col col-lg-2 offset-xs-6">
+        <p>col-2 [offset-xs-6]</p>
+      </div>
+    </div>
+  </section>
+  <section class="cont-wrap">
+    <div class="col-wrap">
+      <div class="col-lg-12">
+        <h2>COLUMNS - Break</h2>
+        <p>.break-[mq]-[number] を指定。［.colに指定］</p>
+        <p>colの右側にmarginをつけて改行する。</p>
+        <p>すべてmq-targetなので、ブレイクポイントごとに指定する。</p>
+      </div>
+    </div>
+    <div class="col-wrap">
+      <div class="col col-lg-2 col-xs-6 break-xs-6">
+        <p>col[break-xs]</p>
+      </div>
+      <div class="col col-lg-2 col-xs-6 break-lg-4">
+        <p>col [break-lg]</p>
+      </div>
+      <div class="col col-lg-2 col-xs-6">
+        <p>col</p>
+      </div>
+      <div class="col col-lg-2 col-xs-6">
+        <p>col</p>
+      </div>
+      <div class="col col-lg-2 col-xs-6 break-lg-6">
+        <p>col[break-lg]</p>
+      </div>
+      <div class="col col-lg-2 col-xs-6">
+        <p>col</p>
+      </div>
+    </div>
+  </section>
+  <section class="cont-wrap">
+    <div class="col-wrap">
+      <div class="col-lg-12">
+        <h2>COLUMNS - Align</h2>
+        <h3>横</h3>
+        <p>左、中央、右揃えを行う。上下揃えも可（top, middle, center）</p>
+        <p>.wrap-[classname] を指定。［.col-wrapに指定］</p>
+      </div>
+    </div>
+    <div class="col-wrap wrap-start">
+      <div class="col col-lg-4">
+        <p>col-4 col-left</p>
+      </div>
+      <div class="col col-lg-4">
+        <p>col-4 col-right</p>
+      </div>
+    </div>
+    <div class="col-wrap wrap-center">
+      <div class="col col-lg-4">
+        <p>col-4 col-center</p>
+      </div>
+      <div class="col col-lg-4">
+        <p>col-4 col-center</p>
+      </div>
+    </div>
+    <div class="col-wrap wrap-right">
+      <div class="col col-lg-4">
+        <p>col-4 col-right</p>
+      </div>
+      <div class="col col-lg-4">
+        <p>col-4 col-right</p>
+      </div>
+    </div>
+    <div class="col-wrap">
+      <div class="col-lg-12">
+        <h3>縦</h3>
+        <p>colごとに上下揃えを変える</p>
+        <p>.col-[classname] を指定。［.colに指定］</p>
+      </div>
+    </div>
+    <div class="col-wrap" style="height:300px; background:#f0f0f0;">
+      <div class="col col-lg-4 col-top">
+        <p>col-4 top</p>
+      </div>
+      <div class="col col-lg-4 col-middle">
+        <p>col-4 middle</p>
+      </div>
+      <div class="col col-lg-4 col-bottom margin-reset">
+        <p>col-4 bottom</p>
+      </div>
+    </div>
+  </section>
+  <section class="cont-wrap">
+    <!-- <div class="col-wrap">
+      <div class="col-lg-12">
+        <h2>COLUMNS - Other</h2>
+        <h3>入れ子</h3>
+        <p>colを入れ子にする</p>
+      </div>
+    </div>
+    <div class="col-wrap">
+      <div class="col col-lg-4">
+        <p>col-4</p>
+      </div>
+      <div class="col-wrap col-lg-4">
+        <div class="col col-lg-2">
+          <p>col-2（col-4内）</p>
+        </div>
+        <div class="col col-lg-2">
+          <p>col-2（col-4内）</p>
+        </div>
+      </div>
+      <div class="col col-lg-4">
+        <p>col-4</p>
+      </div>
+    </div> -->
+    <div class="col-wrap">
+      <div class="col-lg-12">
+        <h3>消す</h3>
+        <p>要素を消す</p>
+      </div>
+    </div>
+    <div class="col-wrap">
+      <div class="col col-lg-3 hidden-lg">
+        <p>col-3 md,sm,xs</p>
+      </div>
+      <div class="col col-lg-3 hidden-md">
+        <p>col-3 lg,sm,xs</p>
+      </div>
+      <div class="col col-lg-3 hidden-sm">
+        <p>col-3 lg,md,xs</p>
+      </div>
+      <div class="col col-lg-3 hidden-xs">
+        <p>col-3 lg,md,sm</p>
+      </div>
+    </div>
+  </section>
+</body>

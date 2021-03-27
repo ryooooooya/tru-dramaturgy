@@ -1,0 +1,275 @@
+@import "./variables.scss";
+
+/* wrap */
+.cont-wrap{
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+.col-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  width: $colwrap-wid;
+  margin: auto;
+  &.max{
+    width: 100%;
+  }
+  @include mq(){
+    width:100%;
+  }
+}
+/* SP時の横padding */
+@include mq(){
+  @if $gutter-wid / 2 < $gutter-sp-wrap{
+    .col-wrap{
+      padding-left: $gutter-sp-wrap - $gutter-wid / 2;
+      padding-right: $gutter-sp-wrap - $gutter-wid / 2;
+    }
+  }
+}
+
+
+/* col計算(col-1~12まで) */
+.col-lg-12{
+  width: 100%;
+  padding: 0 $gutter-wid / 2;
+  @include mq(sm){
+    padding: 0 $gutter-wid-sm / 2;
+  }
+}
+// lg
+@for $i from 1 through 11 {
+  .col-lg-#{$i} {
+    width: $i * $col-wid + $i * $gutter-wid;
+    padding: 0 $gutter-wid / 2;
+    @include mq(){
+      width: calc((100vw - (100vw - 100%)) / 12 * #{$i});
+      padding: 0 $gutter-wid / 2;
+    }
+    @include mq(sm){
+      padding: 0 $gutter-wid-sm / 2;
+    }
+  }
+  @include mq-target(lg){
+    .offset-lg-#{$i} {
+      margin-left: $i * $col-wid + $i * $gutter-wid;
+    }
+  }
+}
+// md ~ xs
+@for $i from 1 through 12 {
+  @include mq(md){
+    .col-md-#{$i} {
+      width: calc((100vw - (100vw - 100%)) / 12 * #{$i});
+      padding: 0 $gutter-wid / 2;
+    }
+  }
+  @include mq(sm){
+    .col-sm-#{$i} {
+      width: calc((100vw - (100vw - 100%)) / 12 * #{$i});
+      padding: 0 $gutter-wid-sm / 2;
+    }
+  }
+  @include mq(xs){
+    .col-xs-#{$i} {
+      width: calc((100vw - (100vw - 100%)) / 12 * #{$i});
+      padding: 0 $gutter-wid-sm / 2;
+    }
+  }
+  // offset
+  @include mq-target(md){
+    .offset-md-#{$i} {
+      margin-left: $i * 100% / 12;
+    }
+  }
+  @include mq-target(sm){
+    .offset-sm-#{$i} {
+      margin-left: $i * 100% / 12;
+    }
+  }
+  @include mq-target(xs){
+    .offset-xs-#{$i} {
+      margin-left: $i * 100% / 12;
+    }
+  }
+}
+
+/* col計算 幅100%のグリッド */
+.max {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      width: 100 / 12 * $i * 1%;
+      padding: 0;
+    }
+  }
+  @for $i from 1 through 12 {
+    @include mq(md){
+      .col-md-#{$i} {
+        width: 100 / 12 * $i * 1%;
+        padding: 0;
+      }
+    }
+  }
+  @for $i from 1 through 12 {
+    @include mq(sm){
+      .col-sm-#{$i} {
+        width: 100 / 12 * $i * 1%;
+        padding: 0;
+      }
+    }
+  }
+  @for $i from 1 through 12 {
+    @include mq(xs){
+      .col-xs-#{$i} {
+        width: 100 / 12 * $i * 1%;
+        padding: 0;
+      }
+    }
+  }
+}
+
+/* col計算 nogutter（左右マージンなしグリッド） */
+.nogutter{
+  padding: 0 $gutter-wid / 2;
+  @include mq(){
+    padding: 0 $gutter-md-wid / 2 * 1%;
+  }
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      width: 100 / 12 * $i * 1%;
+      padding: 0;
+    }
+  }
+  @for $i from 1 through 12 {
+    @include mq(md){
+      .col-md-#{$i} {
+        width: 100 / 12 * $i * 1%;
+        padding: 0;
+      }
+    }
+  }
+  @for $i from 1 through 12 {
+    @include mq(sm){
+      .col-sm-#{$i} {
+        width: 100 / 12 * $i * 1%;
+        padding: 0;
+      }
+    }
+  }
+  @for $i from 1 through 12 {
+    @include mq(xs){
+      .col-xs-#{$i} {
+        width: 100 / 12 * $i * 1%;
+        padding: 0;
+      }
+    }
+  }
+}
+
+/* break */
+@for $i from 1 through 11 {
+  @include mq-target(lg){
+    .break-lg-#{$i} {
+      margin-right: (12 - $i) * ($col-wid + $gutter-wid);
+    }
+  }
+  @include mq-target(md){
+    .break-md-#{$i} {
+      margin-right: (12 - $i) * ($col-md-wid + $gutter-md-wid) * 1%;
+    }
+  }
+  @include mq-target(sm){
+    .break-sm-#{$i} {
+      margin-right: (12 - $i) * ($col-md-wid + $gutter-md-wid) * 1%;
+    }
+  }
+  @include mq-target(xs){
+    .break-xs-#{$i} {
+      margin-right: (12 - $i) * ($col-md-wid + $gutter-md-wid) * 1%;
+    }
+  }
+}
+
+/* offsetのリセット */
+.offset-lg-0{
+  margin-left: 0;
+}
+@include mq-target(md){
+  .offset-md-0{
+    margin-left: 0;
+  }
+}
+@include mq-target(sm){
+  .offset-sm-0{
+    margin-left: 0;
+  }
+}
+@include mq-target(xs){
+  .offset-xs-0{
+    margin-left: 0;
+  }
+}
+
+/* メディアクエリごとの要素の消去（ex:hidden-smをつけるとsmだけ消える） */
+.hidden-lg{
+  @include mq-target(lg){
+    display: none;
+  }
+}
+.hidden-md{
+  @include mq-target(){
+    display: none;
+  }
+}
+.hidden-sm{
+  @include mq-target(sm){
+    display: none;
+  }
+}
+.hidden-xs{
+  @include mq-target(xs){
+    display: none;
+  }
+}
+
+/* マージンリセット */
+.margin-reset{
+  margin: 0;
+}
+
+/* flexboxの揃え（.col-wrapの要素に付与する） */
+.wrap-left{
+  justify-content: flex-start;
+}
+.wrap-right{
+  justify-content: flex-end;
+}
+.wrap-center{
+  justify-content: center;
+}
+.wrap-top{
+  align-items: flex-start;
+}
+.wrap-bottom{
+  align-items: flex-end;
+}
+.wrap-middle{
+  align-items: center;
+}
+/* flexboxの揃え（.colの要素に付与する） */
+.col-top{
+  align-self: flex-start;
+}
+.col-bottom{
+  align-self: flex-end;
+}
+.col-middle{
+  align-self: center;
+}
+
+// 入れ子の時
+// .col-wrap{
+//   > .col-wrap{
+//     padding: 0;
+//   }
+// }

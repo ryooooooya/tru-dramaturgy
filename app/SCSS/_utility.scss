@@ -1,0 +1,209 @@
+// common -------------------
+// font
+.f-s-12{
+  font-size: 0.8rem;
+}
+.f-s-14{
+  font-size: 0.875rem;
+}
+.f-s-16{
+  font-size: 1rem;
+}
+.f-s-20{
+  font-size: 1.25rem;
+}
+.f-s-28{
+  font-size: 1.75rem;
+}
+.f-w-700{
+  font-weight: 700;
+}
+.f-l-1_8{
+  line-height: 1.8;
+}
+.f-l-2{
+  line-height: 2;
+}
+.f-l-2_5{
+  line-height: 2.5;
+}
+.f-link{
+  text-decoration: underline;
+  cursor: pointer;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.t-a-center{
+  text-align: center;
+}
+.t-a-left{
+  text-align: left;
+}
+.t-a-right{
+  text-align: right;
+}
+
+// layout
+.d-inline-block{
+  display: inline-block;
+}
+.d-block{
+  display: block;
+}
+.d-flex{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.a-i-center{
+  align-items: center;
+}
+.a-i-flex-end{
+  align-items: flex-end;
+}
+.j-c-center{
+  justify-content: center;
+}
+.j-c-s-b{
+  justify-content: space-between;
+}
+.w-25{
+  width: 25%;
+}
+.w-33{
+  width: 33.3333%;
+}
+.w-50{
+  width: 50%;
+}
+.w-100{
+  width: 100%;
+}
+@include mq(){
+  .w-md-25{
+    width: 25%;
+  }
+  .w-md-33{
+    width: 33.3333%;
+  }
+  .w-md-50{
+    width: 50%;
+  }
+  .w-md-100{
+    width: 100%;
+  }
+}
+@include mq(sm){
+  .w-sm-25{
+    width: 25%;
+  }
+  .w-sm-33{
+    width: 33.3333%;
+  }
+  .w-sm-50{
+    width: 50%;
+  }
+  .w-sm-100{
+    width: 100%;
+  }
+}
+
+// margin, padding
+$num : 4;
+$numpx: 4px;
+@for $i from 1 through 30 {
+  .m-t-lg-#{$i * $num} {
+    margin-top: $i * $numpx;
+  }
+  .m-r-lg-#{$i * $num} {
+    margin-right: $i * $numpx;
+  }
+  .m-l-lg-#{$i * $num} {
+    margin-left: $i * $numpx;
+  }
+  .m-b-lg-#{$i * $num} {
+    margin-bottom: $i * $numpx;
+  }
+  .p-lg-#{$i * $num} {
+    padding: $i * $numpx;
+  }
+  .p-t-lg-#{$i * $num} {
+    padding-top: $i * $numpx;
+  }
+  .p-r-lg-#{$i * $num} {
+    padding-right: $i * $numpx;
+  }
+  .p-l-lg-#{$i * $num} {
+    padding-left: $i * $numpx;
+  }
+  .p-b-lg-#{$i * $num} {
+    padding-bottom: $i * $numpx;
+  }
+}
+@include mq(sm){
+  @for $i from 1 through 30 {
+    .m-t-sm-#{$i * $num} {
+      margin-top: $i * $numpx;
+    }
+    .m-r-sm-#{$i * $num} {
+      margin-right: $i * $numpx;
+    }
+    .m-l-sm-#{$i * $num} {
+      margin-left: $i * $numpx;
+    }
+    .m-b-sm-#{$i * $num} {
+      margin-bottom: $i * $numpx;
+    }
+    .m-sm-0{
+      margin: 0;
+    }
+    .p-sm-#{$i * $num} {
+      padding: $i * $numpx;
+    }
+    .p-t-sm-#{$i * $num} {
+      padding-top: $i * $numpx;
+    }
+    .p-r-sm-#{$i * $num} {
+      padding-right: $i * $numpx;
+    }
+    .p-l-sm-#{$i * $num} {
+      padding-left: $i * $numpx;
+    }
+    .p-b-sm-#{$i * $num} {
+      padding-bottom: $i * $numpx;
+    }
+    .p-sm-0{
+      padding: 0;
+    }
+  }
+}
+.p-0{
+  padding: 0;
+}
+
+// hidden
+.hidden-lg{
+  @include mq-target(lg){
+    display: none;
+  }
+}
+.hidden-md{
+  @include mq-target(){
+    display: none;
+  }
+}
+.hidden-sm{
+  @include mq-target(sm){
+    display: none;
+  }
+}
+.hidden-xs{
+  @include mq-target(xs){
+    display: none;
+  }
+}
+.-hidden{
+  display: none;
+}

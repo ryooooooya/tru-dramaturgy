@@ -1,0 +1,14 @@
+@import "./normalize.scss";
+@import "./grid.scss";
+@import "./guide.scss";
+@import "./utility.scss";
+
+section{
+  margin-top: 64px;
+}
+.col{
+  margin-top: 24px;
+}
+h1,h2,h3{
+  margin-bottom: 16px
+}

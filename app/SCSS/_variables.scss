@@ -1,0 +1,60 @@
+/* グリッド */
+$col-wid:53px;
+$gutter-wid:60px;
+$gutter-wid-sm:18px;
+$colwrap-wid: $col-wid * 12 + $gutter-wid * 12;
+$col-md-wid: $col-wid / $colwrap-wid * 100;
+$gutter-md-wid: $gutter-wid / $colwrap-wid * 100;
+$gutter-sp-wrap: 20px;
+
+/* ブレイクポイントの設定 min~max */
+$mq-breakpoints-min: (
+  'xs': '0px',
+  'sm': '481px',
+  'md': '769px',
+  'lg': $colwrap-wid + 1px,
+) !default;
+
+$mq-breakpoints-max: (
+  'xs': '480px',
+  'sm': '768px',
+  'md': $colwrap-wid,
+  'lg': '99999px',
+) !default;
+
+/* mq:それより小さい画面に適応 mq-target:そのメディアクエリのみ */
+@mixin mq-target($breakpoint: md) {
+  @media screen and (min-width: #{map-get($mq-breakpoints-min, $breakpoint)}) and (max-width: #{map-get($mq-breakpoints-max, $breakpoint)}) {
+    @content;
+  }
+}
+
+@mixin mq($breakpoint: md) {
+  @media screen and (max-width: #{map-get($mq-breakpoints-max, $breakpoint)}) {
+    @content;
+  }
+}
+
+/* アニメーション */
+$anim: all 500ms 0s cubic-bezier(0.19, 1, 0.22, 1);
+
+/* Reset系 */
+*{
+  color: #333;
+  line-height: 1.2em;
+  letter-spacing: 0.04em;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,p{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+h1,h2,h3{
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
