@@ -57,10 +57,9 @@ $(function() {
 // read more
 $(function(){
   var number = 0;
-  var article = $(".article").length - 1;
-  console.log(article);
+  var article = $(".js-article").length - 1;
   $('.readmore-button').click(function() {
-    $(".article").slice(number, number+3).toggleClass('hide');
+    $(".js-article").slice(number, number+3).toggleClass('hide');
     number = number+3;
     if(article < number){
       $('.readmore-button').css('display','none');
