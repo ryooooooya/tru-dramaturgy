@@ -1,0 +1,521 @@
+@import "../modules/normalize.scss";
+@import "../modules/grid.scss";
+@import "../modules/utility.scss";
+
+// index  ------------------------------
+.index{
+  position: relative;
+  background: url("../../img/hero.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  //hero
+  .index-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../../img/hero.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    > .hero{
+      > .col{
+        text-align: center;
+        > .fig{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          mix-blend-mode: hard-light;
+          transform: translate(-50%,-50%);
+          z-index: 4000;
+        }
+        > .title{
+          position: relative;
+          display: inline-block;
+          z-index: 4500;
+        }
+      }
+    }
+  }
+  // ダンスドラマトゥルクとは
+  .index-about{
+    margin-top: 100px;
+    background: transparent linear-gradient(103deg, #7FEB98 0%, #FFB44E 100%) 0% 0% no-repeat padding-box;
+    > .about{
+      padding-top: 80px;
+      padding-bottom: 80px;
+      > .col{
+        > .title{
+          color: #FFFFFF;
+          &.-en{
+            margin-top: 50px;
+            font-size: 3.75rem;
+            letter-spacing: 0.04em;
+            text-align: right;
+          }
+        }
+        > .text{
+          margin-top: 50px;
+          color: #1A1A1A;
+          &.-ja{
+            font-size: 1.125rem;
+            letter-spacing: 0.01em;
+            line-height: 2.222;
+          }
+          &.-en{
+            font-size: 1rem;
+            letter-spacing: 0;
+            line-height: 1.875;
+          }
+        }
+      }
+    }
+  }
+  // ウェブサイトの概要
+  .index-mission{
+    margin-top: -1px;
+    background: transparent linear-gradient(258deg, #7FEB98 0%, #FFB44E 100%) 0% 0% no-repeat padding-box;
+    > .mission{
+      > .col{
+        > .accordion-content{
+          padding-bottom: 60px;
+          > p{
+            font-size: 1rem;
+            line-height: 2.125;
+            &.-ja{
+              & + .-en{
+                margin-top: 80px;
+              }
+            }
+            & + p{
+              margin-top: 2.125em;
+            }
+            &.name{
+              margin-top: 80px;
+              line-height: 1;
+              text-align: right;
+              &+.name{
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // ダンスドラマトゥルクの紹介
+  .index-introduction{
+    margin-top: 500px;
+    background: transparent linear-gradient(253deg, #92E8DE 0%, #CE90D6 100%) 0% 0% no-repeat padding-box;
+    > .introduction{
+      padding: 80px 0;
+      > .col{
+        > .title{
+          color: #FFF;
+          text-align: center;
+          &.-en{
+            margin-top: 30px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+          }
+        }
+      }
+    }
+  }
+  // ムービー
+  .index-movie{
+    margin-top: 10px;
+    background: transparent linear-gradient(240deg, #D4E892 0%, #EDADF5 100%) 0% 0% no-repeat padding-box;
+    > .movie{
+      padding: 80px 0;
+      > .col{
+        > .title{
+          color: #FFF;
+          text-align: center;
+          &.-ja{
+            font-size: 1.875rem;
+          }
+          &.-en{
+            margin-top: 20px;
+            font-size: 1.25rem;
+            // font-weight: 600;
+            letter-spacing: 0.05em;
+          }
+        }
+        > .box{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 360px;
+          margin-top: 80px;
+          font-size: 1.25rem;
+          color: #585858;
+          border: 1px #FFF solid;
+          &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 90px;
+            height: 90px;
+            background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MCIgaGVpZ2h0PSI5MCIgdmlld0JveD0iMCAwIDkwIDkwIj4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjc1IC0yOTExKSI+CiAgICA8cGF0aCBkPSJNMTQuMjI4LDAsMjguNDU2LDI0LjgxOUgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzM1LjI3NyAyOTQxLjI3Mikgcm90YXRlKDkwKSIgZmlsbD0iI2ZmZiIvPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjc1IDI5MTEpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiI+CiAgICAgIDxjaXJjbGUgY3g9IjQ1IiBjeT0iNDUiIHI9IjQ1IiBzdHJva2U9Im5vbmUiLz4KICAgICAgPGNpcmNsZSBjeD0iNDUiIGN5PSI0NSIgcj0iNDQiIGZpbGw9Im5vbmUiLz4KICAgIDwvZz4KICA8L2c+Cjwvc3ZnPgo=");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+          }
+        }
+        > .information{
+          margin-top: 50px;
+          color: #FFF;
+          text-align: center;
+          > .title{
+            &.-ja{
+              font-size: 1.5rem;
+            }
+            &.-en{
+              margin-top: 20px;
+              font-size: 1.25rem;
+              font-weight: 400;
+            }
+          }
+          > .text{
+            margin-top: 30px;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  // プロフィール
+  .index-profile{
+    margin-top: -1px;
+    background: transparent linear-gradient(260deg, #EDADF5 0%, #D4E892 100%) 0% 0% no-repeat padding-box;
+    > .profile{
+      > .col{
+        > .accordion-content{
+          padding-bottom: 100px;
+          > h3{
+            font-size: 1.5rem;
+            line-height: 1.666;
+            text-align: center;
+            & + p{
+              margin-top: 30px;
+            }
+          }
+          > p{
+            font-size: 0.875rem;
+            line-height: 2;
+            &.-en{
+              font-size: 0.9275rem;
+            }
+            & + h3{
+              margin-top: 80px;
+            }
+          }
+          > a{
+            display: block;
+            margin-top: 32px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  // これまでの主なドラマトゥルギー
+  .index-works{
+    margin-top: -1px;
+    background: transparent linear-gradient(240deg, #D4E892 0%, #EDADF5 100%) 0% 0% no-repeat padding-box;
+    > .works{
+      > .col{
+        > .accordion-content{
+          padding-bottom: 150px;
+          > .list{
+            width: 100%;
+            padding-left: 160px;
+            padding-right: 113px;
+            // horizon scroll
+            overflow-x: auto;
+            white-space: nowrap;
+            overflow-scrolling: touch;
+            -webkit-overflow-scrolling: touch;
+            // hidden scroll bar
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display:none;
+            }
+            > .item{
+              display: inline-block;
+              width: 731px;
+              height: 456px;
+              padding-right: 113px;
+              border-right: 1px #a2a2a2 solid;
+              & + .item{
+                margin-left: 60px;
+              }
+              > h3{
+                font-size: 1.875rem;
+                font-style: italic;
+                color: #525252;
+                & + h4{
+                  margin-top: 30px
+                }
+                > .long{
+                  display: inline-block;
+                  margin: auto 20px;
+                  padding-left: 2px;
+                  transform: scale(3, 0.6);
+                }
+              }
+              > h4{
+                font-size: 1rem;
+                color: #525252;
+                & + p{
+                  margin-top: 5px;
+                }
+              }
+              > p{
+                font-size: 0.8rem;
+                color: #525252;
+                line-height: 2;
+                & + h4{
+                  margin-top: 18px;
+                }
+                & + a{
+                  margin-top: 40px;
+                }
+              }
+              > a{
+                position: relative;
+                display: block;
+                padding-left: 30px;
+                white-space: normal;
+                font-size: 0.8rem;
+                line-height: 2;
+                & + a{
+                  margin-top: 20px;
+                }
+                &.blank{
+                  &::after{
+                    content: "";
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMSIgaGVpZ2h0PSIyMSIgdmlld0JveD0iMCAwIDIxIDIxIj4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTA5IDExNCkiPgogICAgPHBhdGggZD0iTTEyNy0xMDMuNTc3Vi05My41SDEwOS41Vi0xMTFoMTAuMDgyIiBmaWxsPSJub25lIiBzdHJva2U9IiNkMzdmMGMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICA8cGF0aCBkPSJNMTIwLjAwNy0xMTMuNUgxMjkuNXY5LjQ5MSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDM3ZjBjIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPGxpbmUgeTE9IjEzLjUiIHgyPSIxMy41IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMTYgLTExMy41KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDM3ZjBjIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMSIvPgogIDwvZz4KPC9zdmc+Cg==");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  }
+                }
+                &.movie{
+                  &::after{
+                    content: "";
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzIgLTQ0NzIpIj4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcyIDQ0NzIpIiBmaWxsPSJub25lIiBzdHJva2U9IiNkMzdmMGMiIHN0cm9rZS13aWR0aD0iMSI+CiAgICAgIDxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgc3Ryb2tlPSJub25lIi8+CiAgICAgIDxyZWN0IHg9IjAuNSIgeT0iMC41IiB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIGZpbGw9Im5vbmUiLz4KICAgIDwvZz4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg3LjM4NiA0NDc2LjkyOSkgcm90YXRlKDkwKSIgZmlsbD0ibm9uZSI+CiAgICAgIDxwYXRoIGQ9Ik01LjA3MiwwbDUuMDcyLDguODQ3SDBaIiBzdHJva2U9Im5vbmUiLz4KICAgICAgPHBhdGggZD0iTSA1LjA3MTY1NzE4MDc4NjEzMyAyLjAxMDcwNTk0Nzg3NTk3NyBMIDEuNzI1OTMxMTY3NjAyNTM5IDcuODQ2OTYxOTc1MDk3NjU2IEwgOC40MTczODMxOTM5Njk3MjcgNy44NDY5NjE5NzUwOTc2NTYgTCA1LjA3MTY1NzE4MDc4NjEzMyAyLjAxMDcwNTk0Nzg3NTk3NyBNIDUuMDcxNjU3MTgwNzg2MTMzIDEuOTA3MzQ4NjMyODEyNWUtMDYgTCAxMC4xNDMzMTcyMjI1OTUyMSA4Ljg0Njk2MTk3NTA5NzY1NiBMIC0yLjg2MTAyMjk0OTIxODc1ZS0wNiA4Ljg0Njk2MTk3NTA5NzY1NiBMIDUuMDcxNjU3MTgwNzg2MTMzIDEuOTA3MzQ4NjMyODEyNWUtMDYgWiIgc3Ryb2tlPSJub25lIiBmaWxsPSIjZDM3ZjBjIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // テキストコレクション
+  .index-text-collection{
+    margin-top: 500px;
+    background: transparent linear-gradient(150deg, #8BEB96 0%, #80D5CB 100%) 0% 0% no-repeat padding-box;
+    > .text-collection{
+      padding: 80px 0;
+      > .col{
+        &.article{
+          visibility: visible;
+          height: auto;
+          opacity: 1;
+          transition: $anim;
+          &.hide{
+            visibility: hidden;
+            margin-top: 0;
+            height: 0;
+            opacity: 0;
+            transition: $anim;
+          }
+        }
+        &:first-child{
+          margin-bottom: 80px;
+        }
+        > .title{
+          color: #FFF;
+          &.-en{
+            margin-top: 30px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+          }
+        }
+        > .item{
+          position: relative;
+          height: 400px;
+          padding: 20px 20px 30px;
+          margin-bottom: 60px;
+          border: 1px #707070 solid;
+          cursor: pointer;
+          &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 44px;
+            height: 44px;
+            background: transparent linear-gradient(225deg, #80D5CB 0%, #8BEB96 100%) 0% 0% no-repeat padding-box;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-top: 1px #707070 solid;
+            border-left: 1px #707070 solid;
+            z-index: 4500;
+          }
+          &::after{
+            content: "";
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            width: 20px;
+            height: 20px;
+            background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTM2Ljg2MSAtMzc5MC44NjEpIj4KICAgIDxsaW5lIHgyPSIyMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTM2Ljg2MSAzODAwLjg2MSkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcwNzA3MCIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICA8bGluZSB5Mj0iMjAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU0Ni44NjEgMzc5MC44NjEpIiBmaWxsPSJub25lIiBzdHJva2U9IiM3MDcwNzAiIHN0cm9rZS13aWR0aD0iMSIvPgogIDwvZz4KPC9zdmc+");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 4500;
+          }
+          > .title{
+            font-size: 1.875rem;
+            color: #1A1A1A;
+            letter-spacing: 0.05em;
+            line-height: 1.666;
+            font-feature-settings: "palt";
+            // font-weight: 600;
+            &.-small{
+              font-size: 1.25rem;
+            }
+          }
+          > .author{
+            margin-top: 20px;
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: #525252;
+            &.-small{
+              font-size: 1rem;
+            }
+          }
+          > .description{
+            position: absolute;
+            bottom: 20px;
+            width: calc(100% - 40px);
+            font-size: 0.875rem;
+            // font-weight: 600;
+            color: #525252;
+            letter-spacing: 0;
+            line-height: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+            &.-line10{
+              -webkit-line-clamp: 9;
+            }
+          }
+        }
+      }
+    }
+    > .more-text{
+      margin-top: -60px;
+      & + .text-collection{
+        padding: 0;
+      }
+    }
+  }
+  // 資料
+  .index-reference{
+    margin-top: 500px;
+    background: transparent linear-gradient(227deg, #D4E892 0%, #EDADF5 100%) 0% 0% no-repeat padding-box;
+    > .reference{
+      padding: 80px 0;
+      > .col{
+        &:first-child{
+          margin-bottom: 80px;
+        }
+        > .title{
+          color: #FFF;
+          &.-ja{
+            font-size: 1.875rem;
+            font-weight: 600;
+          }
+          &.-en{
+            margin-top: 20px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+          }
+        }
+        > .list{
+          margin: 0;
+          padding: 0;
+          padding-left: 24px;
+          > .item{
+            position: relative;
+            font-size: 0.875rem;
+            color: #525252;
+            line-height: 1.714;
+            list-style: none;
+            &::before{
+              content: "・";
+              position: absolute;
+              top: 0;
+              left: -24px;
+            }
+            & + .item{
+              margin-top: 30px;
+            }
+            > a{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  // クレジット
+  .index-credit{
+    padding: 50px 0 88px;
+    background: transparent linear-gradient(98deg, #7FEB98 0%, #FFB44E 100%) 0% 0% no-repeat padding-box;
+    > .credit{
+      > .col{
+        margin-top: 30px;
+        >p{
+          font-size: 0.8rem;
+          color: #525252;
+          line-height: 2.333;
+        }
+      }
+    }
+  }
+}
