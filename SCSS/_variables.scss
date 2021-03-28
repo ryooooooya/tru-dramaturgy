@@ -40,16 +40,22 @@ $anim: all 500ms 0s cubic-bezier(0.19, 1, 0.22, 1);
 
 /* Reset系 */
 *{
-  color: #333;
-  line-height: 1.2em;
-  letter-spacing: 0.04em;
   box-sizing: border-box;
+  font-family: 'EB Garamond',Georgia,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
 }
 h1,h2,h3,h4,p{
   margin: 0;
+  font-size: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
 }
 a{
   text-decoration: none;
+  color: #D37F0C;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 img{
   max-width: 100%;

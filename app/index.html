@@ -18,14 +18,17 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Site Name">
 <!-- css,js -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="common/css/app.min.css">
-<!-- <script type="text/javascript" src="common/js/jquery.min.js"></script>
-<script type="text/javascript" src="common/js/app.js"></script> -->
+<script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/app.js"></script>
+
 </head>
 
-<body>
+<body class="index">
   <!-- guide -->
-  <div class="cont-wrap guide-wrap">
+  <!-- <div class="cont-wrap guide-wrap">
     <div class="col-wrap guide">
       <div class="col col-lg-1">
       </div>
@@ -52,238 +55,553 @@
       <div class="col col-lg-1">
       </div>
     </div>
-  </div>
-  <nav class="cont-wrap m-nav t-nav">
-    <div class="col-wrap">
-      <div class="col col-lg-2 col-md-12 col-middle m-nav-logo">
-        <h1>Ryoya.Grid.CSS</h1>
-      </div>
-    </div>
-  </nav>
-  <section class="cont-wrap" id="responsive">
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - Responsive</h2>
-        <p>.col-[mq]-[number] を指定。［.colに指定］</p>
-        <p>lg, md, sm, xsは変数で管理。</p>
-        <p>res : col-lg-4, col-md-3, col-sm-6, col-xs-12</p>
-      </div>
-    </div>
-    <div class="col-wrap">
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
-      </div>
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
-      </div>
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
-      </div>
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
-      </div>
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
-      </div>
-      <div class="col col-lg-4 col-md-3 col-sm-6 col-xs-12">
-        <p>col-res</p>
+  </div> -->
+  <section class="index-hero cont-wrap">
+    <div class="hero col-wrap">
+      <div class="col col-lg-12">
+        <img src="img/logo-fig.png" alt="" class="fig">
+        <h1 class="title">
+          <img src="img/logo.svg" alt="ダンスドラマトゥルギー" width="555">
+        </h1>
       </div>
     </div>
   </section>
-  <section class="cont-wrap" id="nogutter">
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - nogutter</h2>
-        <p>.nogutterを指定。［.col-wrapに指定］</p>
-        <p>gutterなし。</p>
-      </div>
-    </div>
-    <div class="col-wrap nogutter">
-      <div class="col col-lg-4">
-        <p>col-4</p>
-      </div>
-      <div class="col col-lg-4">
-        <p>col-4</p>
-      </div>
-      <div class="col col-lg-4">
-        <p>col-4</p>
-      </div>
-    </div>
-  </section>
-  <section class="cont-wrap" id="max">
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - Max[100%]</h2>
-        <p>.maxを指定。［.col-wrapに指定］</p>
-        <p>colごとのpaddingは別で指定する。</p>
-        <p>res : col-lg-6, col-md-3, col-sm-6, col-xs-12</p>
-      </div>
-    </div>
-    <div class="col-wrap max">
-      <div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <p>col-max-12</p>
-      </div>
-      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
-        <p>col-max-6</p>
-      </div>
-      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
-        <p>col-max-6</p>
-      </div>
-      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
-        <p>col-max-6</p>
-      </div>
-      <div class="col col-lg-6 col-md-3 col-sm-6 col-xs-12">
-        <p>col-max-6</p>
+  <section class="index-about cont-wrap">
+    <div class="about col-wrap">
+      <div class="col col-lg-12">
+        <h2 class="title -ja">
+          <img src="img/about.svg" alt="ダンスドラマツルギーとは" width="579">
+        </h2>
+        <p class="text -ja">
+          ダンスの作り方という意味で、舞踊の実践理論と考えられています。1970年代後半から、これまでのテクニックによらない新しいダンスのあり方が求められたことに伴い、作品構造における整合性を取るため、コンテンポラリーダンスの創作現場にも演劇のようにドラマトゥルクが起用されるようになりました。このようなダンスドラマトゥルクの活躍は、欧州から世界各地に広がり、振付家やダンサーとともに創作プロセスにかかわりつつ、それを別の視点で考察する「ダンスドラマトゥルギー」という実践的な研究アプローチの誕生に結びつきました。
+        </p>
+        <p class="text -en">
+          Dance dramaturgy encompasses both the practical and theoretical aspects of dance . From the late 1970s on, a period in which pre-existing techniques no longer matched the needs of dance, the dramaturg’s role has gradually been introduced from the theatrical world into the creative process in contemporary dance in order to ensure coherence in the structure of the dance piece. Ever since, starting in Europe and spreading worldwide, dramaturgical thinking has also opened up fresh approaches to dance research, in which not only are dramaturgs directly engaged in the creative process itself, but also observe it from a different perspective to that of choreographers or dancers.
+        </p>
+        <h2 class="title -en">
+          <img src="img/about-en.svg" alt=" What is Dance Dramaturgy?" width="766">
+        </h3>
       </div>
     </div>
   </section>
-  <section class="cont-wrap" id="offset">
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - offset</h2>
-        <p>.offset-[mq]-[number] を指定。［.colに指定］</p>
-      </div>
-    </div>
-    <div class="col-wrap">
-      <div class="col col-lg-3 offset-lg-1">
-        <p>col-3 [offset-lg-1]</p>
-      </div>
-      <div class="col col-lg-4 offset-md-2">
-        <p>col-4 [offset-md-2]</p>
-      </div>
-      <div class="col col-lg-3 offset-sm-4">
-        <p>col-3 [offset-sm-4]</p>
-      </div>
-      <div class="col col-lg-2 offset-xs-6">
-        <p>col-2 [offset-xs-6]</p>
-      </div>
-    </div>
-  </section>
-  <section class="cont-wrap">
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - Break</h2>
-        <p>.break-[mq]-[number] を指定。［.colに指定］</p>
-        <p>colの右側にmarginをつけて改行する。</p>
-        <p>すべてmq-targetなので、ブレイクポイントごとに指定する。</p>
-      </div>
-    </div>
-    <div class="col-wrap">
-      <div class="col col-lg-2 col-xs-6 break-xs-6">
-        <p>col[break-xs]</p>
-      </div>
-      <div class="col col-lg-2 col-xs-6 break-lg-4">
-        <p>col [break-lg]</p>
-      </div>
-      <div class="col col-lg-2 col-xs-6">
-        <p>col</p>
-      </div>
-      <div class="col col-lg-2 col-xs-6">
-        <p>col</p>
-      </div>
-      <div class="col col-lg-2 col-xs-6 break-lg-6">
-        <p>col[break-lg]</p>
-      </div>
-      <div class="col col-lg-2 col-xs-6">
-        <p>col</p>
-      </div>
-    </div>
-  </section>
-  <section class="cont-wrap">
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - Align</h2>
-        <h3>横</h3>
-        <p>左、中央、右揃えを行う。上下揃えも可（top, middle, center）</p>
-        <p>.wrap-[classname] を指定。［.col-wrapに指定］</p>
-      </div>
-    </div>
-    <div class="col-wrap wrap-start">
-      <div class="col col-lg-4">
-        <p>col-4 col-left</p>
-      </div>
-      <div class="col col-lg-4">
-        <p>col-4 col-right</p>
-      </div>
-    </div>
-    <div class="col-wrap wrap-center">
-      <div class="col col-lg-4">
-        <p>col-4 col-center</p>
-      </div>
-      <div class="col col-lg-4">
-        <p>col-4 col-center</p>
-      </div>
-    </div>
-    <div class="col-wrap wrap-right">
-      <div class="col col-lg-4">
-        <p>col-4 col-right</p>
-      </div>
-      <div class="col col-lg-4">
-        <p>col-4 col-right</p>
-      </div>
-    </div>
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h3>縦</h3>
-        <p>colごとに上下揃えを変える</p>
-        <p>.col-[classname] を指定。［.colに指定］</p>
-      </div>
-    </div>
-    <div class="col-wrap" style="height:300px; background:#f0f0f0;">
-      <div class="col col-lg-4 col-top">
-        <p>col-4 top</p>
-      </div>
-      <div class="col col-lg-4 col-middle">
-        <p>col-4 middle</p>
-      </div>
-      <div class="col col-lg-4 col-bottom margin-reset">
-        <p>col-4 bottom</p>
-      </div>
-    </div>
-  </section>
-  <section class="cont-wrap">
-    <!-- <div class="col-wrap">
-      <div class="col-lg-12">
-        <h2>COLUMNS - Other</h2>
-        <h3>入れ子</h3>
-        <p>colを入れ子にする</p>
-      </div>
-    </div>
-    <div class="col-wrap">
-      <div class="col col-lg-4">
-        <p>col-4</p>
-      </div>
-      <div class="col-wrap col-lg-4">
-        <div class="col col-lg-2">
-          <p>col-2（col-4内）</p>
+  <section class="index-mission cont-wrap">
+    <div class="mission col-wrap">
+      <div class="col col-lg-12">
+        <div class="accordion-button">
+          <div class="-ja">
+            ウェブサイトの趣旨
+          </div>
+          <div class="-en">
+            This Website’s Mission
+          </div>
         </div>
-        <div class="col col-lg-2">
-          <p>col-2（col-4内）</p>
+        <div class="accordion-content">
+          <p class="-ja">
+            ダンスドラマトゥルギーに関する日本語情報がないという声をうけて、私の活動の情報発信を兼ねて、ダンスドラマトゥルギーに関する日英バイリンガルのウェブサイトを作ることにしました。ダンスドラマトゥルギーをめぐる欧米でのこの20年の関心の広がりは止まることを知らず、近年は大学の学科設立やシリーズ書籍の刊行も始まっています。ただ、ダンスドラマトゥルギーという概念は、多くの議論を引き起こすものであり、またダンスドラマトゥルクの役割も一般化できないため、それらをめぐる欧米の広範な議論は日本ではあまり紹介されてきませんでした。
+          </p>
+          <p class="-ja">
+            そのため、このウェブサイトでは、ダンスドラマトゥルギーに関する欧米・アジア・日本のドラマトゥルク／研究者／批評家／アーティストが書いたテクスト抜粋を集めています。日本語のテクストは英語に、英語のテクストは日本語に翻訳しました。日本ではまだ新しいテーマのため、欧米やアジアでの議論の進展とは隔たりがありますが、日本のダンスの視点から見て、結びつきの深いテクストを中心に紹介しています。現時点ではドラマトゥルクの著作や活動にかかわるものを中心に掲載していますが、今後はそれに限らず、創作への刺激に溢れるものも紹介していきたいと考えています。そして、このウェブサイトが、今後ダンスドラマトゥルクとなる人を支えるガイドラインになるだけでなく、ダンスの担い手全てに活用されていくことを願っています。
+          </p>
+          <p class="-en">
+            Given the paucity of texts available in Japanese on dance dramaturgy, I decided to launch a bilingual website on this much overlooked subject. Over the last twenty years, practitioners and researchers alike have become increasingly interested in dramaturgical practices and thinking in the Euro-American context, to such an extent that a master programs in dance dramaturgy and a book series devoted to the topic are currently being published. And yet, the concept of dance dramaturgy remains highly controversial, and dance dramaturgs have yet to find an accepted role. For some reason, any discussion on the topic has yet to make a serious impact in a Japanese context.
+          </p>
+          <p class="-en">
+            This website will introduce written excerpts by dance dramaturgs, researchers, critics, and artists from Euro-American, Asian, and Japanese backgrounds. Contributions from overseas will be translated into Japanese and our overseas readership will equally get an opportunity to acquaint themselves with the writings of Japanese researchers and practitioners.  Given dance dramaturgy remains an emerging field, discussions on the subject in Japan have not yet fully matured. To stimulate more debate, I have selected dramaturgical excerpts, including some of my own dramaturgic notes and interviews with artists, from the perspective of dance in Japan. While most texts are by dance dramaturgs, in future I hope to expand our scope by introducing those texts which have inspired our creative process. Serving as a guideline, I hope this website will encourage and foster current and future dance dramaturgs, as well as empower and stimulate all dance makers with their dramaturgical approach for our coming bright future of dance.
+          </p>
+          <p class="name -ja">
+            中島那奈子
+          </p>
+          <p class="name -en">
+            Nanako Nakajima
+          </p>
+        </div>
+        <div class="accordion-close">
+          Close
         </div>
       </div>
-      <div class="col col-lg-4">
-        <p>col-4</p>
-      </div>
-    </div> -->
-    <div class="col-wrap">
-      <div class="col-lg-12">
-        <h3>消す</h3>
-        <p>要素を消す</p>
-      </div>
     </div>
-    <div class="col-wrap">
-      <div class="col col-lg-3 hidden-lg">
-        <p>col-3 md,sm,xs</p>
-      </div>
-      <div class="col col-lg-3 hidden-md">
-        <p>col-3 lg,sm,xs</p>
-      </div>
-      <div class="col col-lg-3 hidden-sm">
-        <p>col-3 lg,md,xs</p>
-      </div>
-      <div class="col col-lg-3 hidden-xs">
-        <p>col-3 lg,md,sm</p>
+  </section>
+  <section class="index-introduction cont-wrap">
+    <div class="introduction col-wrap">
+      <div class="col col-lg-12">
+        <h2 class="title -ja">
+          <img src="img/introduce.svg" alt="ダンスドラマトゥルクの紹介" width="596">
+        </h2>
+        <h2 class="title -en">
+          Introducing Dance Dramaturgs
+        </h3>
       </div>
     </div>
   </section>
+  <section class="index-movie cont-wrap">
+    <div class="movie col-wrap wrap-center">
+      <div class="col col-lg-6 col-md-8 col-sm-12">
+        <h2 class="title -ja">
+          中島那奈子
+        </h2>
+        <h2 class="title -en">
+          Nanako NAKAJIMA
+        </h2>
+        <div class="box">
+          Movie Coming soon
+        </div>
+        <div class="information">
+          <h4 class="title -ja">
+            インタビュー「ダンスドラマトゥルクについて」
+          </h4>
+          <h4 class="title -en">
+            Interview―About Dance Dramaturg
+          </h4>
+          <p class="text">
+            15min／VIMEO
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="index-profile cont-wrap">
+    <div class="profile col-wrap wrap-center">
+      <div class="col col-lg-8 col-md-10 col-sm-12">
+        <div class="accordion-button">
+          <div class="-ja">
+            プロフィール
+          </div>
+          <div class="-en">
+            Profile
+          </div>
+        </div>
+        <div class="accordion-content">
+          <h3 class="-ja">
+            中島那奈子
+          </h3>
+          <p class="-ja">
+            ダンス研究者、ダンスドラマトゥルク。博士（舞踊学）。日本舞踊宗家藤間流師範。日本学術振興会特別研究員（PD）/埼玉大学、ベルリン自由大学国際パフォーマンス研究センターInterweaving Performane Culturesリサーチ・フェローを経て、各地の大学で教鞭をとりながら、2005年からダンスドラマトゥルクとして国内外で活躍する。<br>
+            ニューヨークの振付家ルチアナ・アーギュラーとの作品 Exhausting Love at Danspace Project は2006／07年ニューヨーク・ベッシー賞を受賞、2017年には北米ドラマトゥルク協会から、エリオット・ヘイズ賞特別賞を受ける。ドラマトゥルクとしての活動とともに、老いと踊りの研究を並行して進め、研究と実践を組み合わせる近年のプロジェクトに「イヴォンヌ・レイナーを巡るパフォーマティヴ・エクシビジョン」（京都芸術劇場春秋座、2017）、老いた革命バレエダンサーの作品（演出・振付メンファン・ワン、2019）がある。2019／20年は、ベルリン自由大学ヴァレスカ・ゲルト記念客員教授に着任し「ダンスアーカイブボックスベルリン」をベルリン芸術アカデミーで上演。<br>
+            論文にDance Dramaturgy: Modes of Agency, Awareness and Engagement (Palgrave, 2015),　編著にThe Aging Body in Dance: A Cross-cultural Perspective  (co-edit. by Gabriele Brandstetter, Routledge, 2017)、『老いと踊り』（共編外山紀久子、勁草書房、2019年）。
+          </p>
+          <h3 class="-en">
+            Nanako Nakajima
+          </h3>
+          <p class="-en">
+            Given the paucity of texts available in Japanese on dance dramaturgy, I decided to launch a bilingual website on this much overlooked subject. Over the last twenty years, practitioners and researchers alike have become increasingly interested in dramaturgical practices and thinking in the Euro-American context, to such an extent that a master programs in dance dramaturgy and a book series devoted to the topic are currently being published. And yet, the concept of dance dramaturgy remains highly controversial, and dance dramaturgs have yet to find an accepted role. For some reason, any discussion on the topic has yet to make a serious impact in a Japanese context.
+          </p>
+          <p class="-en">
+            This website will introduce written excerpts by dance dramaturgs, researchers, critics, and artists from Euro-American, Asian, and Japanese backgrounds. Contributions from overseas will be translated into Japanese and our overseas readership will equally get an opportunity to acquaint themselves with the writings of Japanese researchers and practitioners.  Given dance dramaturgy remains an emerging field, discussions on the subject in Japan have not yet fully matured. To stimulate more debate, I have selected dramaturgical excerpts, including some of my own dramaturgic notes and interviews with artists, from the perspective of dance in Japan. While most texts are by dance dramaturgs, in future I hope to expand our scope by introducing those texts which have inspired our creative process. Serving as a guideline, I hope this website will encourage and foster current and future dance dramaturgs, as well as empower and stimulate all dance makers with their dramaturgical approach for our coming bright future of dance.
+          </p>
+          <a href="http://www.nanakonakajima.com">
+            http://www.nanakonakajima.com
+          </a>
+        </div>
+        <div class="accordion-close">
+          Close
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="index-works cont-wrap">
+    <div class="works col-wrap max">
+      <div class="col col-lg-12">
+        <div class="accordion-button">
+          <div class="-ja">
+            これまでの主なドラマトゥルギー
+          </div>
+          <div class="-en">
+            Selected Dramaturgical works
+          </div>
+        </div>
+        <div class="accordion-content">
+          <div class="list">
+            <!-- 2020―2021 -->
+            <div class="item">
+              <h3>
+                2020<span class="long">―</span>2021
+              </h3>
+              <h4>
+                「ダンスアーカイブボックスベルリン」
+              </h4>
+              <p>
+                プロジェクトディレクション／ドラマトゥルギー<br>
+                ドイツ・ベルリン自由大学（ヴァレスカ・ゲルト記念客員教授プロジェクト）<br>
+                学生たちとのプレゼンテーション（ベルリン芸術アカデミー、2020年2月11日）
+              </p>
+              <h4>
+                “Dance Archive Box Berlin”
+              </h4>
+              <p>
+                Project Direction/ Dramaturgy<br>
+                Valeska-Gert Visiting Professor 2019/20 (Freie Universitaet Berlin, Germany) <br>
+                Presentation with Master Students in Dance Studies (Akademie der Künste, Berlin, February 11, 2020)
+              </p>
+              <a href="" class="blank">
+                エッセー：「ダンスを作ることとバラすこと──ダンスドラマトゥルクの実践と研究」
+              </a>
+              <a href="" class="blank">
+                Interview: Nanako Nakajima in Conversation with Gabriele Brandstetter, “Dance as a Gift. Facilitating matchmaking without meeting each other,” Performance Research, volume 25 Issue 6, 2021:
+              </a>
+              <a href="" class="movie">
+                記録映像／Short Documentations
+              </a>
+            </div>
+            <!-- 2020―2021 -->
+            <div class="item">
+              <h3>
+                2020<span class="long">―</span>2021
+              </h3>
+              <h4>
+                「ダンスアーカイブボックスベルリン」
+              </h4>
+              <p>
+                プロジェクトディレクション／ドラマトゥルギー<br>
+                ドイツ・ベルリン自由大学（ヴァレスカ・ゲルト記念客員教授プロジェクト）<br>
+                学生たちとのプレゼンテーション（ベルリン芸術アカデミー、2020年2月11日）
+              </p>
+              <h4>
+                “Dance Archive Box Berlin”
+              </h4>
+              <p>
+                Project Direction/ Dramaturgy<br>
+                Valeska-Gert Visiting Professor 2019/20 (Freie Universitaet Berlin, Germany) <br>
+                Presentation with Master Students in Dance Studies (Akademie der Künste, Berlin, February 11, 2020)
+              </p>
+              <a href="" class="blank">
+                エッセー：「ダンスを作ることとバラすこと──ダンスドラマトゥルクの実践と研究」
+              </a>
+              <a href="" class="blank">
+                Interview: Nanako Nakajima in Conversation with Gabriele Brandstetter, “Dance as a Gift. Facilitating matchmaking without meeting each other,” Performance Research, volume 25 Issue 6, 2021:
+              </a>
+              <a href="" class="movie">
+                記録映像／Short Documentations
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-close">
+          Close
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="index-text-collection cont-wrap">
+    <div class="text-collection col-wrap">
+      <div class="col col-lg-12">
+        <h2 class="title -ja">
+          <img src="img/text.svg" alt="ダンスドラマトゥルギーテクストコレクション" width="923">
+        </h2>
+        <h2 class="title -en">
+          Introducing Dance Dramaturgs
+        </h3>
+      </div>
+      <!-- article -->
+      <div class="col col-lg-6 col-sm-12">
+        <div class="item">
+          <h3 class="title">
+            立会人、対話パートナー、編集者としてのドラマトゥルク
+          </h3>
+          <p class="author">
+            ガイ・クールズ
+          </p>
+          <p class="description">
+            ダンスドラマトゥルギーに関する文献は全般的に最近かなり増えているが、ドラマトゥルクの創作過程における実質的な仕事を説明する文献は未だほとんどない。ドラマトゥルクの仕事には（沈黙の）立会人、対話パートナー、そして編集者としての３つの不可欠な役割があると考える。 <br>
+            ダンスドラマトゥルギーに関する文献は全般的に最近かなり増えているが、ドラマトゥルクの創作プロセスにおける実質的な仕事を説明する文献は未だほとんどない。ドラマトゥルクの仕事には（沈黙の）立会人、対話パートナー、そして編集者という３つの不可欠な役割があると考える。
+          </p>
+        </div>
+      </div>
+      <!-- article -->
+      <div class="col col-lg-6 col-sm-12">
+        <div class="item">
+          <h3 class="title">
+            The dramaturg as witness, dialogue partner and editor.
+          </h3>
+          <p class="author">
+            By Guy Cools
+          </p>
+          <p class="description">
+            Although the text corpus on dance dramaturgy has recently grown substantially, there is still very little literature that describes the actual work a dramaturg does within the creative process. The three roles I would describe essential to the work of the dramaturg are those of: the (silent) witness, the dialogue partner and the editor.<br>
+            The dance dramaturg as somatic witness
+          </p>
+        </div>
+      </div>
+      <!-- article -->
+      <div class="col col-lg-4 col-md-6 col-sm-12">
+        <div class="item">
+          <h3 class="title -small">
+            エランシー（さまよう）という仕事：ダンスドラマトゥルクに向けた7つの分散メモ
+          </h3>
+          <p class="author -small">
+            アンドレ・レペッキ
+          </p>
+          <p class="description">
+            6つ目のメモ<br>
+            数え切れないほどのアイディアと数え切れないほどの〔アイディアの〕実現化の間でさまよう漠然としていながらも厳密なドラマトゥルク業の分野では、パフォーマンスの各要素に対して、微妙なアプローチを用いて文脈を捉えることで、明確性を見出すことができる。そこでは不可欠な要素(imperative)に必ず注意を払わなければならない。それを内在的不可欠性(immanent imperative)と呼ぼう。それは状況の中の周縁的または取るに足りないように思えることも含めて、すべての要素に注意を傾けることである。たとえば、一人のダンサーの特定の身体とその個々の動き方や存在、気質の様態に注意を傾ける。もしくはジェスチャー、ないしステップ、ないしフレーズの個別性に注意を傾ける。それらは、それら自身がもっているロジックに従っていると同時に、それらを先んじていて、また後続し、取り囲むそのほかのジェスチャー、ステップ、フレーズ、あるいは先んじている、あるいは後続する、あるいは取り囲むそのほかのジェスチャー、ステップ、フレーズとの連関性という全体を考慮に入れたロジックにもしたがっている。もしくは、ある物体の素材的な構成や機能性に注意を傾けるだけでなく、その呼称が持つ詩的な派生効果にも注意を傾ける(例えば、ある物体がどのように単なる道具として、あるいは単なる器具として機能するのかということは、その呼称が、聴覚的なイメージ、言い換えれば、意味するものというサブリミナルではあるが具体的な共鳴する域を創造しうる言葉の域においてどのように機能するのかということと切り離すことはできない)。それらの要素がときには凝集し、ときには散らばり、ときには衝突しあいながら、どのようにして収まるかをマッピングするのがドラマトゥルクの仕事である。ドラマトゥルクは幾重もの力を特定し、可能性を与えることで、それらの力が自ら線を描けるようにする 。それがエランシー(さまよい)の作用であり、「漠然としていながらも厳密」であるエランシーの仕事そのものである。
+          </p>
+        </div>
+      </div>
+      <!-- article -->
+      <div class="col col-lg-4 col-md-6 col-sm-12">
+        <div class="item">
+          <h3 class="title -small">
+            Errancy as Work: Seven Strewn Notes for Dance Dramaturgy
+          </h3>
+          <p class="author -small">
+            André Lepecki
+          </p>
+          <p class="description">
+            Note Six<br>
+            In the nebulous yet rigorous domain of dramaturging, erring among a multiplicity of thoughts and a multiplicity of actualisations, clarity is gained by subtly approaching each performance element contextually. Here, an imperative must always be attended to. Let’s call it an immanent imperative, to attend carefully to all the elements present in the situation, even if supposedly peripheral, even if supposedly insignificant: a dancer’s specific body and particular modes of moving, of being, and of temperament; a gesture’s, or step’s,  or phrase’ singularity within its own logic and within the overall logic of its articulation with other preceding, succeeding, and/or surrounding gestures, steps and phrases; not only an object’s material composition and functionality but also the poetic ramifications of its name (for instance how an object works as a mere tool or instrument cannot be isolated from how its name works in a field of words that can create a subliminal yet concrete resonant field of acoustic images, or signifiers). Mapping how all these elements fall into place by sometimes cohering, sometimes adhering, sometimes dispersing, and sometimes conflicting with each other, is the task of dramaturgy. The dramaturg serves this task by identifying, following, and enabling this multitude of forces to follow the lines they themselves draw. This is errancy at work. This is the “anexact yet rigorous” work of errancy.
+
+          </p>
+        </div>
+      </div>
+      <!-- article -->
+      <div class="col col-lg-4 col-md-6 col-sm-12">
+        <div class="item">
+          <h3 class="title -small">
+            The Conversation
+          </h3>
+          <p class="description -line10">
+            Diana: I would like to ask the three dance dramaturges with us, André, Heidi and Hildegard to try and tell us what you do in the role of the dance dramaturge and also a bit about how you came to be doing it.Heidi: Well, I was the editor for a journal of cultural criticism that William Forsythe had read and wanted to discuss along with more theoretical ideas. I watched his work and saw that he was actually trying to manifest some of these ideas on the stage. This initiated the endless conversations that eventually led to my working as a dramaturge for him. What do I do? I feel that I help translate ideas that could be linguistic, mathematical, or scientific into another form and try to create a ground with the choreographer where our mutual obsessions can interact. At times maybe I prepare packets of information (text, images, etc.) for the dancers to look over but not to have to understand in a didactic sense. I’ve also worked with other choreographers, and it is different with each one.André: I was hanging out in Lisbon and having conversations with people in the dance world who thought I should be more involved somehow. Originally I had a task that had no name. But at a certain moment as it became part of the institution of production, as one is getting a fee, etc., you have to have a name for what you do. In my case, Bruno Verbergt (former director of the Klapstuk Festival in Belgium) was producing Meg Stuart with whom I was working and he said to me, “You are the dramaturge” and I said, “okay, I’m the dramaturge”. What do I do in that role? Well, what Meg asks me to do at the beginning of the process is to be in the studio constantly. After that we talk a great deal. She asks me about what I see happening in a scene, and I come up with what I call “metaphorical explosions” – where I see relations and connections, etc. Towards the latter part of the process we work together to make it more cohesive.
+          </p>
+        </div>
+      </div>
+      <!-- article -->
+      <div class="col col-lg-6 col-sm-12">
+        <div class="item">
+          <h3 class="title">
+            会話
+          </h3>
+          <p class="description -line10">
+            ダイアナ・シオドレス（Diana Theodores）、アンドレ・レペッキ（André Lepecki）、ハイディ・ギルピン（Heidi Gilpin）、ヒルデハード・デ・ハウスト（Hildegard De Vuyst）の 3名のダンスドラマトゥルクにお越しいただいているので、ダンスドラマトゥルクとしてどのようなことをされているか、なぜそれをするに至ったのかについてお話しいただきたいと思います。<br>
+            ハイディ：文化批評誌の編集者を務めていたとき、ウィリアム・フォーサイス（William Forsythe）が読んでくれていて、もっと理論的概念に沿って議論をすることを持ち掛けてくれました。私は彼の作品を拝見し、彼が舞台上で実際にそのような概念を表現しようとしていることが分かりました。そこから尽きることのない会話が始まり、最終的に彼のドラマトゥルクを務めるに至りました。私がどのようなことをするかというと、言語、数学、科学を始めとするアイディアを別の形に翻訳し、振付家とわたしが互いに共通してもつ執着心が合わさる領域を創出していると感じます。ときにはダンサーたちのために情報知識の束（テクスト、イメージなど）を用意しますが、それはざっと見てもらうためのものであり、教条的に理解しなければならないものではありません。他の振付家たちとも仕事をしてきましたが、振付家によって毎回異なります。アンドレ：私はリスボンで色々と出入りしながらダンス界の人たちと会話をしていたら、その人たちから私も何らかの形でもっと携わるべきだと声をかけてもらいました。当初は名のない作業でした。それがある時点で制作体制の一員となり、報酬を受け取るに際してなどに、自分がやっていることを名付ける必要が出てきました。私の場合、既に一緒に仕事をしていたメグ・スチュアート（Meg Stuart）をブルーノ・フェルベルト（Bruno Verbergt：ベルギーのクラップストゥック・ フェスティバル〈Klapstuk Festival〉のディレクター）がプロデュースすることになった際に、ブルーノに「あなたはドラマトゥルクです」と言われ、「はい、分かりました。私はドラマトゥルクです」と言いました。ドラマトゥルクという役割において、何をするかですか？創作プロセスの初期段階にメグに頼まれるのは、絶えず稽古場にいてほしいということです。その後にかなり話し込みます。私の目から見て現場では何が起こっていると思うかと彼女からは尋ねられ、私は「比喩の打ち上げ花火」と自分で称する、あらゆる関係性やつながりなどを一挙に伝えます。プロセスの後半に進むにつれて協働しながらまとまりをもたせていきます。
+          </p>
+        </div>
+      </div>
+      <!-- article -->
+      <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div class="item">
+          <h3 class="title -small">
+            オーストラリアの「心からのダンス」とは？
+          </h3>
+          <p class="author -small">
+            ダリア・ピグラム／レイチェル・スウェイン<br>
+            マルゲク（Marrugeku）共同芸術監督
+          </p>
+          <p class="description">
+            マルゲクのリサーチプロジェクト「国に耳を傾ける（Listening to Country）」の最中にマルゲクのパトロンであり、文化ドラマトゥルクであり、私の祖父でもあるパトリック・ドットソン（Patrick Dodson）が声明を発表した。それはマルグクの振付プロセスの鍵となっている。
+          </p>
+        </div>
+      </div>
+      <!-- article -->
+      <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div class="item">
+          <h3 class="title -small">
+            Australia’s Dance Frome The Heart?
+          </h3>
+          <p class="author -small">
+            By Dalisa Pigram and Rachael Swain, Co-Artistic Directors of Marrugeku
+          </p>
+          <p class="description">
+            During a Marrugeku research project titled Listening to Country the company’s patron,cultural dramaturg and my grandfather Patrick Dodson made a statement that has been key to our choreographic processes in Marrugeku. He said:
+          </p>
+        </div>
+      </div>
+      <!-- more -->
+      <!-- article -->
+      <div class="article hide col col-lg-4 col-md-6 col-sm-12">
+        <div class="item">
+          <h3 class="title -small">
+            エランシー（さまよう）という仕事：ダンスドラマトゥルクに向けた7つの分散メモ
+          </h3>
+          <p class="author -small">
+            アンドレ・レペッキ
+          </p>
+          <p class="description">
+            6つ目のメモ<br>
+            数え切れないほどのアイディアと数え切れないほどの〔アイディアの〕実現化の間でさまよう漠然としていながらも厳密なドラマトゥルク業の分野では、パフォーマンスの各要素に対して、微妙なアプローチを用いて文脈を捉えることで、明確性を見出すことができる。そこでは不可欠な要素(imperative)に必ず注意を払わなければならない。それを内在的不可欠性(immanent imperative)と呼ぼう。それは状況の中の周縁的または取るに足りないように思えることも含めて、すべての要素に注意を傾けることである。たとえば、一人のダンサーの特定の身体とその個々の動き方や存在、気質の様態に注意を傾ける。もしくはジェスチャー、ないしステップ、ないしフレーズの個別性に注意を傾ける。それらは、それら自身がもっているロジックに従っていると同時に、それらを先んじていて、また後続し、取り囲むそのほかのジェスチャー、ステップ、フレーズ、あるいは先んじている、あるいは後続する、あるいは取り囲むそのほかのジェスチャー、ステップ、フレーズとの連関性という全体を考慮に入れたロジックにもしたがっている。もしくは、ある物体の素材的な構成や機能性に注意を傾けるだけでなく、その呼称が持つ詩的な派生効果にも注意を傾ける(例えば、ある物体がどのように単なる道具として、あるいは単なる器具として機能するのかということは、その呼称が、聴覚的なイメージ、言い換えれば、意味するものというサブリミナルではあるが具体的な共鳴する域を創造しうる言葉の域においてどのように機能するのかということと切り離すことはできない)。それらの要素がときには凝集し、ときには散らばり、ときには衝突しあいながら、どのようにして収まるかをマッピングするのがドラマトゥルクの仕事である。ドラマトゥルクは幾重もの力を特定し、可能性を与えることで、それらの力が自ら線を描けるようにする 。それがエランシー(さまよい)の作用であり、「漠然としていながらも厳密」であるエランシーの仕事そのものである。
+          </p>
+        </div>
+      </div>
+      <!-- article -->
+      <div class="article hide col col-lg-4 col-md-6 col-sm-12">
+        <div class="item">
+          <h3 class="title -small">
+            Errancy as Work: Seven Strewn Notes for Dance Dramaturgy
+          </h3>
+          <p class="author -small">
+            André Lepecki
+          </p>
+          <p class="description">
+            Note Six<br>
+            In the nebulous yet rigorous domain of dramaturging, erring among a multiplicity of thoughts and a multiplicity of actualisations, clarity is gained by subtly approaching each performance element contextually. Here, an imperative must always be attended to. Let’s call it an immanent imperative, to attend carefully to all the elements present in the situation, even if supposedly peripheral, even if supposedly insignificant: a dancer’s specific body and particular modes of moving, of being, and of temperament; a gesture’s, or step’s,  or phrase’ singularity within its own logic and within the overall logic of its articulation with other preceding, succeeding, and/or surrounding gestures, steps and phrases; not only an object’s material composition and functionality but also the poetic ramifications of its name (for instance how an object works as a mere tool or instrument cannot be isolated from how its name works in a field of words that can create a subliminal yet concrete resonant field of acoustic images, or signifiers). Mapping how all these elements fall into place by sometimes cohering, sometimes adhering, sometimes dispersing, and sometimes conflicting with each other, is the task of dramaturgy. The dramaturg serves this task by identifying, following, and enabling this multitude of forces to follow the lines they themselves draw. This is errancy at work. This is the “anexact yet rigorous” work of errancy.
+
+          </p>
+        </div>
+      </div>
+      <!-- article -->
+      <div class="article hide col col-lg-4 col-md-6 col-sm-12">
+        <div class="item">
+          <h3 class="title -small">
+            The Conversation
+          </h3>
+          <p class="description -line10">
+            Diana: I would like to ask the three dance dramaturges with us, André, Heidi and Hildegard to try and tell us what you do in the role of the dance dramaturge and also a bit about how you came to be doing it.Heidi: Well, I was the editor for a journal of cultural criticism that William Forsythe had read and wanted to discuss along with more theoretical ideas. I watched his work and saw that he was actually trying to manifest some of these ideas on the stage. This initiated the endless conversations that eventually led to my working as a dramaturge for him. What do I do? I feel that I help translate ideas that could be linguistic, mathematical, or scientific into another form and try to create a ground with the choreographer where our mutual obsessions can interact. At times maybe I prepare packets of information (text, images, etc.) for the dancers to look over but not to have to understand in a didactic sense. I’ve also worked with other choreographers, and it is different with each one.André: I was hanging out in Lisbon and having conversations with people in the dance world who thought I should be more involved somehow. Originally I had a task that had no name. But at a certain moment as it became part of the institution of production, as one is getting a fee, etc., you have to have a name for what you do. In my case, Bruno Verbergt (former director of the Klapstuk Festival in Belgium) was producing Meg Stuart with whom I was working and he said to me, “You are the dramaturge” and I said, “okay, I’m the dramaturge”. What do I do in that role? Well, what Meg asks me to do at the beginning of the process is to be in the studio constantly. After that we talk a great deal. She asks me about what I see happening in a scene, and I come up with what I call “metaphorical explosions” – where I see relations and connections, etc. Towards the latter part of the process we work together to make it more cohesive.
+          </p>
+        </div>
+      </div>
+       <!-- article -->
+       <div class="article hide col col-lg-4 col-md-6 col-sm-12">
+        <div class="item">
+          <h3 class="title -small">
+            エランシー（さまよう）という仕事：ダンスドラマトゥルクに向けた7つの分散メモ
+          </h3>
+          <p class="author -small">
+            アンドレ・レペッキ
+          </p>
+          <p class="description">
+            6つ目のメモ<br>
+            数え切れないほどのアイディアと数え切れないほどの〔アイディアの〕実現化の間でさまよう漠然としていながらも厳密なドラマトゥルク業の分野では、パフォーマンスの各要素に対して、微妙なアプローチを用いて文脈を捉えることで、明確性を見出すことができる。そこでは不可欠な要素(imperative)に必ず注意を払わなければならない。それを内在的不可欠性(immanent imperative)と呼ぼう。それは状況の中の周縁的または取るに足りないように思えることも含めて、すべての要素に注意を傾けることである。たとえば、一人のダンサーの特定の身体とその個々の動き方や存在、気質の様態に注意を傾ける。もしくはジェスチャー、ないしステップ、ないしフレーズの個別性に注意を傾ける。それらは、それら自身がもっているロジックに従っていると同時に、それらを先んじていて、また後続し、取り囲むそのほかのジェスチャー、ステップ、フレーズ、あるいは先んじている、あるいは後続する、あるいは取り囲むそのほかのジェスチャー、ステップ、フレーズとの連関性という全体を考慮に入れたロジックにもしたがっている。もしくは、ある物体の素材的な構成や機能性に注意を傾けるだけでなく、その呼称が持つ詩的な派生効果にも注意を傾ける(例えば、ある物体がどのように単なる道具として、あるいは単なる器具として機能するのかということは、その呼称が、聴覚的なイメージ、言い換えれば、意味するものというサブリミナルではあるが具体的な共鳴する域を創造しうる言葉の域においてどのように機能するのかということと切り離すことはできない)。それらの要素がときには凝集し、ときには散らばり、ときには衝突しあいながら、どのようにして収まるかをマッピングするのがドラマトゥルクの仕事である。ドラマトゥルクは幾重もの力を特定し、可能性を与えることで、それらの力が自ら線を描けるようにする 。それがエランシー(さまよい)の作用であり、「漠然としていながらも厳密」であるエランシーの仕事そのものである。
+          </p>
+        </div>
+      </div>
+      <!-- article -->
+      <div class="article hide col col-lg-4 col-md-6 col-sm-12">
+        <div class="item">
+          <h3 class="title -small">
+            Errancy as Work: Seven Strewn Notes for Dance Dramaturgy
+          </h3>
+          <p class="author -small">
+            André Lepecki
+          </p>
+          <p class="description">
+            Note Six<br>
+            In the nebulous yet rigorous domain of dramaturging, erring among a multiplicity of thoughts and a multiplicity of actualisations, clarity is gained by subtly approaching each performance element contextually. Here, an imperative must always be attended to. Let’s call it an immanent imperative, to attend carefully to all the elements present in the situation, even if supposedly peripheral, even if supposedly insignificant: a dancer’s specific body and particular modes of moving, of being, and of temperament; a gesture’s, or step’s,  or phrase’ singularity within its own logic and within the overall logic of its articulation with other preceding, succeeding, and/or surrounding gestures, steps and phrases; not only an object’s material composition and functionality but also the poetic ramifications of its name (for instance how an object works as a mere tool or instrument cannot be isolated from how its name works in a field of words that can create a subliminal yet concrete resonant field of acoustic images, or signifiers). Mapping how all these elements fall into place by sometimes cohering, sometimes adhering, sometimes dispersing, and sometimes conflicting with each other, is the task of dramaturgy. The dramaturg serves this task by identifying, following, and enabling this multitude of forces to follow the lines they themselves draw. This is errancy at work. This is the “anexact yet rigorous” work of errancy.
+
+          </p>
+        </div>
+      </div>
+      <!-- article -->
+      <div class="article hide col col-lg-4 col-md-6 col-sm-12">
+        <div class="item">
+          <h3 class="title -small">
+            The Conversation
+          </h3>
+          <p class="description -line10">
+            Diana: I would like to ask the three dance dramaturges with us, André, Heidi and Hildegard to try and tell us what you do in the role of the dance dramaturge and also a bit about how you came to be doing it.Heidi: Well, I was the editor for a journal of cultural criticism that William Forsythe had read and wanted to discuss along with more theoretical ideas. I watched his work and saw that he was actually trying to manifest some of these ideas on the stage. This initiated the endless conversations that eventually led to my working as a dramaturge for him. What do I do? I feel that I help translate ideas that could be linguistic, mathematical, or scientific into another form and try to create a ground with the choreographer where our mutual obsessions can interact. At times maybe I prepare packets of information (text, images, etc.) for the dancers to look over but not to have to understand in a didactic sense. I’ve also worked with other choreographers, and it is different with each one.André: I was hanging out in Lisbon and having conversations with people in the dance world who thought I should be more involved somehow. Originally I had a task that had no name. But at a certain moment as it became part of the institution of production, as one is getting a fee, etc., you have to have a name for what you do. In my case, Bruno Verbergt (former director of the Klapstuk Festival in Belgium) was producing Meg Stuart with whom I was working and he said to me, “You are the dramaturge” and I said, “okay, I’m the dramaturge”. What do I do in that role? Well, what Meg asks me to do at the beginning of the process is to be in the studio constantly. After that we talk a great deal. She asks me about what I see happening in a scene, and I come up with what I call “metaphorical explosions” – where I see relations and connections, etc. Towards the latter part of the process we work together to make it more cohesive.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- button -->
+    <div class="more-text col-wrap max">
+      <div class="col col-lg-12">
+        <div class="readmore-button">
+          <div class="-en">
+            Show more text
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="index-reference cont-wrap">
+    <div class="reference col-wrap">
+      <div class="col col-lg-12">
+        <h2 class="title -ja">
+          ダンスドラマトゥルギーに関する主な参考文献
+        </h2>
+        <h2 class="title -en">
+          Reference concerning Dance Dramaturgy
+        </h3>
+      </div>
+      <div class="col col-lg-12">
+        <ul class="list">
+          <li class="item">
+            マリアンヌ・ファン・ケルクホーフェン「手に鉛筆を持たずに見ること」訳 川口隆夫
+            <a href="http://www.engekieizo.com/dramaturg/wp-content/uploads/2014/03/Marianne-Van-Kerkhoven-Looking-without-Pencil-in-the-Hand.pdf">
+              http://www.engekieizo.com/dramaturg/wp-content/uploads/2014/03/Marianne-Van-Kerkhoven-Looking-without-Pencil-in-the-Hand.pdf
+            </a>
+          </li>
+          <li class="item">
+            ライムント・ホーゲ『ピナ・バウシュ―タンツテアターとともに』（三元社、2011）
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="index-cloud-funding cont-wrap">
+    <div class="cloud-funding col-wrap wrap-center">
+      <div class="col col-lg-12">
+        <h2 class="title -ja">
+          クラウドファンディングのお願い
+        </h2>
+        <h2 class="title -en">
+          Crowdfunding request
+        </h3>
+        <p class="text -ja">
+          ダンスドラマトゥルクに関する活動へのご支援をお願いいたします。
+        </p>
+        <p class="text -en">
+          Please support the activities related to the dance dramaturg.
+        </p>
+      </div>
+      <a href="" class="col col-lg-6 col-md-8 col-sm-12">
+        <div class="box">
+          <h3 class="title">
+            クラウドファンディング特設ページ
+          </h3>
+          <p class="text">
+            Show more information
+          </p>
+        </div>
+      </a>
+    </div>
+  </section> -->
+  <section class="index-credit cont-wrap">
+    <div class="credit col-wrap">
+      <div class="col col-lg-4 col-md-6 col-sm-12 offset-lg-2 offse-md-0">
+        <p>
+          撮影・編集・共同ディレクション｜岩井優<br>
+          録音・音響｜田代啓希<br>
+          製作｜西原多朱<br>
+          共同ディレクション｜中島那奈子
+        </p>
+      </div>
+      <div class="col col-lg-4 col-md-6 col-sm-12">
+        <p>
+          Video ── Co-Direction: Masaru Iwai<br>
+          Sound: Hiroki Tashiro<br>
+          Production: Tazz Nishihara<br>
+          Co-Direction: Nanako Nakajima
+        </p>
+      </div>
+      <div class="col col-lg-4 col-md-6 col-sm-12 offset-lg-2 offse-md-0">
+        <p>
+          英日翻訳｜辻井美穂<br>
+          日英翻訳、英語テキスト編集｜ジョン・バレット<br>
+          日本語編集｜川野恵子<br>
+          ウェブデザイン｜松岡未来<br>
+          コンセプト／統括｜中島那奈子
+        </p>
+      </div>
+      <div class="col col-lg-4 col-md-6 col-sm-12">
+        <p>
+          English-Japanese translations: Miho Tsujii<br>
+          Japanese-English translations and proofreading of English texts: John Barrett<br>
+          Editing Japanese texts: Keiko Kawano<br>
+          Web Design: Miku Matsuoka<br>
+          Concept and Direction: Nanako Nakajima
+        </p>
+      </div>
+  </section>
+  <a href="mailto:info@dancedramaturgy.org" class="index-contact cont-wrap">
+    <div class="contact col-wrap wrap-center">
+      <div class="col col-lg-12">
+        <h2 class="title -ja">
+          お問い合わせ
+        </h2>
+        <h2 class="title -en">
+          Contact
+        </h2>
+      </div>
+    </div>
+  </a>
+  </main>
 </body>

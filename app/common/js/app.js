@@ -40,8 +40,30 @@ $(function(){
 
 /* accordion */
 $(function() {
-  $('#panel > dd').hide();
-  $('#panel > dt').click(function(e){
-    $('+dd', this).slideToggle(200);
-  })
+  $('.accordion-content').hide();
+  $('.accordion-close').hide();
+  $('.accordion-button').on('click', function () {
+    $(this).toggleClass('open');
+    $(this).next().slideToggle(200);
+    $(this).next().next().slideToggle(200);
+  });
+  $('.accordion-close').on('click', function () {
+    $(this).slideToggle(200);
+    $(this).prev().slideToggle(200);
+    $(this).prev().prev().toggleClass('open');
+  });
+});
+
+// read more
+$(function(){
+  var number = 0;
+  var article = $(".article").length - 1;
+  console.log(article);
+  $('.readmore-button').click(function() {
+    $(".article").slice(number, number+3).toggleClass('hide');
+    number = number+3;
+    if(article < number){
+      $('.readmore-button').css('display','none');
+    }
+  });
 });
